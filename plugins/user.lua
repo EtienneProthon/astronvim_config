@@ -9,4 +9,8 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "gbprod/yanky.nvim",
+    config = function() require("yanky").setup {} end,
+  },
 }
