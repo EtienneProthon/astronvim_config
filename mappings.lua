@@ -23,22 +23,22 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- Yanky
-    ["y"] = { "<Plug>(YankyYank)", desc = "Copy" },
-    ["p"] = { "<Plug>(YankyPutAfter)", desc = "Paste" },
-    ["P"] = { "<Plug>(YankyPutBefore)", desc = "Paste" },
-    ["gp"] = { "<Plug>(YankyGPutAfter)", desc = "Paste" },
-    ["gP"] = { "<Plug>(YankyGPutBefore)", desc = "Paste" },
-
-    ["<c-p>"] = { "<Plug>(YankyCycleForward)", desc = "Cycle Forward" },
-    ["<c-y>"] = { "<Plug>(YankyCycleBackward)", desc = "Cycle Backward" },
+    -- ["y"] = { "<Plug>(YankyYank)", desc = "Copy" },
+    -- ["p"] = { "<Plug>(YankyPutAfter)", desc = "Paste" },
+    -- ["P"] = { "<Plug>(YankyPutBefore)", desc = "Paste" },
+    -- ["gp"] = { "<Plug>(YankyGPutAfter)", desc = "Paste" },
+    -- ["gP"] = { "<Plug>(YankyGPutBefore)", desc = "Paste" },
+    --
+    -- ["<c-p>"] = { "<Plug>(YankyCycleForward)", desc = "Cycle Forward" },
+    -- ["<c-y>"] = { "<Plug>(YankyCycleBackward)", desc = "Cycle Backward" },
   },
-  x = {
-    ["y"] = { "<Plug>(YankyYank)", desc = "Copy" },
-    ["p"] = { "<Plug>(YankyPutAfter)", desc = "Paste" },
-    ["P"] = { "<Plug>(YankyPutBefore)", desc = "Paste" },
-    ["gp"] = { "<Plug>(YankyGPutAfter)", desc = "Paste" },
-    ["gP"] = { "<Plug>(YankyGPutBefore)", desc = "Paste" },
-  },
+  -- x = {
+  --   ["y"] = { "<Plug>(YankyYank)", desc = "Copy" },
+  --   ["p"] = { "<Plug>(YankyPutAfter)", desc = "Paste" },
+  --   ["P"] = { "<Plug>(YankyPutBefore)", desc = "Paste" },
+  --   ["gp"] = { "<Plug>(YankyGPutAfter)", desc = "Paste" },
+  --   ["gP"] = { "<Plug>(YankyGPutBefore)", desc = "Paste" },
+  -- },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
