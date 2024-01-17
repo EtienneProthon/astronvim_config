@@ -25,6 +25,9 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
+    ["<leader>w"] = { ":wa<cr>", desc = "Save all files" },
+    ["<Tab>"] = { ":bnext<cr>", desc = "Go to next buffer" },
+    ["<S-Tab>"] = { ":bprev<cr>", desc = "Go to precedent buffer" },
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- Yanky
     -- ["y"] = { "<Plug>(YankyYank)", desc = "Copy" },
@@ -32,9 +35,11 @@ return {
     -- ["P"] = { "<Plug>(YankyPutBefore)", desc = "Paste" },
     -- ["gp"] = { "<Plug>(YankyGPutAfter)", desc = "Paste" },
     -- ["gP"] = { "<Plug>(YankyGPutBefore)", desc = "Paste" },
-    --
-    -- ["<c-p>"] = { "<Plug>(YankyCycleForward)", desc = "Cycle Forward" },
-    -- ["<c-y>"] = { "<Plug>(YankyCycleBackward)", desc = "Cycle Backward" },
+    ["<c-p>"] = { "<Plug>(YankyCycleForward)", desc = "Cycle Forward" },
+    ["<c-y>"] = { "<Plug>(YankyCycleBackward)", desc = "Cycle Backward" },
+    ["<leader>rn"] = { function() require("neotest").run.run() end, desc = "Run nearest test" },
+    ["<leader>rf"] = { function() require("neotest").run.run(vim.fn.expand "%") end, desc = "Run nearest test" },
+    ["<leader>ro"] = { function() require("neotest").output_panel.open() end, desc = "Open test outputs" },
   },
   -- x = {
   --   ["y"] = { "<Plug>(YankyYank)", desc = "Copy" },
